@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.button {
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    background: #ffffff48;
+    border: none;
+    border-radius: 35px;
+}
+.view {
+    width: 288px;
+    height: 35px;
+    font-size: 17px;
+    margin: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background: none;
+}
+.view:focus {
+    outline: none;
+}
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.background {
+    background: linear-gradient(-45deg, #23D5AB, #23A6D5, #E73C7E, #ee7752);
+    height: 100vh;
+    animation: change 7s ease-in-out infinite;
+    position: relative;
+    background-size: 300% 300%;
+}   
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
